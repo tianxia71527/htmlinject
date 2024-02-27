@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/buttons-min.css">
+    <script src='js/jquery-1.11.2.min.js'></script>
+    <script src='js/popup.js'></script>
+    <script src='lib/codemirror.js'></script>
+    <script src='js/css.js'></script>
+</head>
+
+<body style="width:400px;" class="css-inject-body">
+    <h1>CSS/JS Injector</h1>
+    <div id='message'>CSS style will be added to the page for temprory. </div>
+    <form id="z_css_injection">
+        <p>
+            <label for="z_style_editor">CSS</label>
+            <br />
+            <textarea id="z_style_editor" name="z_style_editor" placeholder="/* this css style will be injected to page on page load */" cols="40" rows="2"></textarea>
+        </p>
+        <!-- <p><label> Apply for domain <input type="checkbox" id="apply_on_domain" class="apply_on_domain" name="apply_on_domain"></label> -->
+        <p>
+            <input id="save" type="submit" class="pure-button pure-button-primary" value="Save Style" />
+            <!-- <input id="format_code" type="button" value="Format Code" /> -->
+            <input id="remove_style" class="pure-button pure-button-error" type="button" value="Remove Style" />
+
+        </p>
+        <p id="msgcss"></p>
+    </form>
+
+        <form id="z_js_injection">
+        <p>
+            <label for="z_js_editor">js</label>
+            <br />
+            <textarea id="z_js_editor" name="z_js_editor" placeholder="/* this js will be injected to page on page load */" cols="40" rows="2"></textarea>
+        </p>
+
+        <p>
+            <input id="save" type="submit" class="pure-button pure-button-primary" value="Save JS" />
+            <input id="remove_js" class="pure-button pure-button-error" type="button" value="Remove JS" />
+
+        </p>
+        <p id="msgjs"></p>
+    </form>
+</body>
+
+</html>

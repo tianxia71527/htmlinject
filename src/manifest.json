@@ -1,0 +1,26 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "css": [ "css/ga.css", "lib/codemirror.js" ],
+      "js": [ "js/ga.js", "js/css.js", "lib/codemirror.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "CSS style will be added to the page for temprory. ",
+   "icons": {
+      "128": "icon.png",
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png"
+   },
+   "manifest_version": 2,
+   "name": "CSS JS injector",
+   "permissions": [ "storage", "tabs", "unlimitedStorage"  ],
+   "short_name": "css js inj",
+   "version": "1.0.1",
+   "web_accessible_resources": [ "script.js" ]
+ 
+}
